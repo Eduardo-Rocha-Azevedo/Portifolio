@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+
+/*RESTO DA PAGINA===============================================*/
+
+.cor {
+    background-color: #000000;
+ }
+
+section{
+    padding: 20px;  
+}
+
+#apresentacao {
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    
+}
+.title{
+    color:#f7fbff;
+    display: flex;
+    text-align: center;   
+}
+.title h1 {
+    font-family: 'Black Ops One';
+    font-weight: 500;
+}
+.title h2 {
+    font-family: 'Black Ops One';
+    color: #fff;
+    font-weight: 300;
+}
+.title2 {
+    font-family: 'Black Ops One';
+    font-weight: 500;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+   
+}
+/*sobre mim*/
+.sobre h1{  
+    font-family: 'Black Ops One';
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+}
+
+/*projetos*/
+
+#projetoCard ,#projetoCard h2 {
+    color: #fff;
+
+}
+.colunaCartao :hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.borda2{
+    border: 1px solid #f00;
+}
+.flexivel {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.colunaCartao{
+    margin-bottom: 15px;
+    padding: 0 8px;
+    width: 264px;
+    height: 200px;
+}
+.cartao{
+    width: 100px;
+    height: 80px;
+}
+article {
+    width: 100%;
+    text-align: center;
+}
+
+
+#cartao1 {
+    width: 264px;
+    height: 191px;
+    background-color: #949090;
+    background-repeat: no-repeat;
+    
+}
+
+.flexivel h2 {
+    color: #000000;
+    display: block;
+}
+/* contato*/
+.formulario p{
+    font-weight: 40px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#botao{
+    width: 60px;
+    height: 40px;
+    background: #949090;
+    border: 1px solid #000;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#botao:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.campoForm{
+    width: 40px;
+}
+
+/* Animacoes*/
+
+[data-anima]{
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anima="esquerda"]{
+     transform: translate3d(-50px,0,0 );/*X Y Z*/
+}
+
+[data-anima="direita"]{
+    transform: translate3d(50,0,0);
+}
+
+[data-anima="centro"]{
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/*RESPONSIVIDADE */
+@media screen and (max-width: 730px){
+
+    .flexivel{
+        width: 100%;
+        display: block;
+    }
+
+    .cartao {
+        width: 50%;
+        height: 35%;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+    }
+   
+    .cartaoImagem{
+        margin: auto;
+    }
+    #sobre{
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    
+}
+    

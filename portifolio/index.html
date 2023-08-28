@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Azevedo</title>
+    
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
+                <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link" data-menu>Sobre</a></li>
+                <li class="nav-item"><a href="#contato"class="nav-link" data-menu>Contato</a></li>
+                
+
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img  class="icon" src="assets/img/menu_white_36dp.svg" alt="menu"></button>
+            </div>
+            </nav>
+
+              <div class="mobile-menu">
+                <ul>
+                   <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
+                   <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
+                   <li class="nav-item"><a href="#sobre" class="nav-link" data-menu>Sobre</a></li>
+                   <li class="nav-item"><a href="#contato"class="nav-link" data-menu>Contato</a></li>
+
+                 </ul>
+             </div>
+
+
+
+    </header>s
+    <div class="cor">
+       <section id="home" class="title" >
+        <br>
+        <div id="apresentacao"><br>
+            <h1>Olá, sou Eduardo Azevedo</h1><br>
+            <h2>Back-end Dev</h2><br><br>
+            
+        </div>
+       
+            </div>
+        </section>
+    </div>
+    
+    <section id="sobre" class="flexivel">
+        <article class="sobre" data-anima="centro">
+            <h1>Sobre mim</h1><br>
+            <p>Estou cursando Analise e Desenvolvimento de Sistemas, já tenho conhecimento de algumas linguangens,
+               também cursei promação no Ensino Médio em 2021, onde apreendi a desenvolver web site com html,css e Js 
+            </p><br>
+            <p>Meu foco é desenvolvinto back-end, atualmente resido em Curitiba-PR </p>
+
+            <br>
+            <h1>O que sei utilizar</h1><br>
+            <img src="assets/img/c++.png" alt="c++">
+            <img src="assets/img/icons8-css-50.png" alt="css">
+            <img src="assets/img/icons8-javascript.svg" alt="javaScript">
+            <img src="assets/img/html.png" alt="html"><br>
+            <img src="assets/img/qt.png" alt="">
+        </article>
+    </section>
+    </div> 
+    
+    <div class="cor" id="projeto">  <br>
+     <h1 class="title2">Projetos</h1>
+    <section id="projeto" class="flexivel">
+      
+        <article class="colunaCartao" data-anima="centro">
+            
+            <div class="cartao" id="cartao1">
+                
+                <h2>Projeto 1</h2>
+                <p>TITULO</p>
+        
+                <p>texto explicativo</p>  
+                <button><a href="#">Acessar</a></button>
+                </div>
+                
+        </article>
+
+        <article class="colunaCartao" data-anima="centro">
+            
+            <div class="cartao" id="cartao1">
+                <h2>Projeto 2</h2>
+                <p>TITULO</p>
+                
+                <p>texto explicativo</p>  
+                <button><a href="#">Acessar</a></button>
+        
+        </article>
+
+        <article class="colunaCartao" data-anima="centro">
+        
+            <div class="cartao" id="cartao1">
+                <h2>Projeto 3</h2>
+                <p>TITULO</p>
+                
+                <p>texto explicativo</p>  
+                <button><a href="#">Acessar</a></button>
+        
+        </article>
+        
+        <article class="colunaCartao" data-anima="centro">
+        
+            <div class="cartao" id="cartao1">
+                <h2>Projeto 4</h2>
+                <p>TITULO</p>
+                
+                <p>texto explicativo</p>  
+                <button><a href="#">Acessar</a></button>
+        
+        </article>
+        
+        <div><br></div>
+    </div>
+
+    </section>
+
+    <section id="contato" class="flexivel"></section>
+        <article class="sobre" data-anima="centro">
+            <h1>Entre em contato</h1>
+            <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png" alt="github"></a>
+            <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img src="assets/img/icons8-linkedin-50.png" alt=""></a>
+           <br><br>
+            <h2>Increva-se </h2><br>
+            <form class="formulario" action="#" method="post">
+                <label for="nome" class="campoForm"><h3>Nome</h3></label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email" class="campoForm"><h3>Email</h3></label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <input id="botao" type="submit" value="Enviar">
+            </form>
+        
+        </article>
+
+    </section>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
