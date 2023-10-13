@@ -12,14 +12,13 @@
 
 html {
     scroll-behavior: smooth;
-    
 }
 
 
 /*RESTO DA PAGINA===============================================*/
 
 .cor {
-    background-color: #000000;
+    background-color: #202020;
  }
 
 section{
@@ -41,11 +40,13 @@ section{
 .title h1 {
     font-family: 'Black Ops One';
     font-weight: 500;
+    margin-bottom: 4%;
 }
 .title h2 {
     font-family: 'Black Ops One';
     color: #fff;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 .title2 {
     font-family: 'Black Ops One';
@@ -61,6 +62,29 @@ section{
     font-weight: 600;
     font-size: 25px;
     color: #000;
+    text-align: center;
+}
+.sobre{
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.sobre p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+}
+.sobre img:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
 }
 
 /*projetos*/
@@ -72,12 +96,10 @@ section{
 .colunaCartao :hover{
     transform: scale(1.1);
     transition: all 0.5s;
-    cursor: pointer;
+    
 }
 
-.borda2{
-    border: 1px solid #f00;
-}
+
 .flexivel {
     margin-top: 15px;
     display: flex;
@@ -87,14 +109,23 @@ section{
 }
 .colunaCartao{
     margin-bottom: 15px;
-    padding: 0 8px;
-    width: 264px;
-    height: 200px;
+    width: 400px;
+    height: 220px;
+    color: #fff;
+    margin: auto;
+    
+}
+.colunaCartao h2{
+    color: #000;
 }
 .cartao{
     width: 100px;
     height: 80px;
+    margin-left: 40%;
+    align-items: center;
+    padding: 5px 5px;
 }
+
 article {
     width: 100%;
     text-align: center;
@@ -102,11 +133,30 @@ article {
 
 
 #cartao1 {
-    width: 264px;
-    height: 191px;
+    width: 300px;
+    height: 200px;
     background-color: #949090;
-    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
     
+}
+.cartao_link{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Black Ops One';
+    margin-top: 10px;
+    margin-right: 8px ;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background: #202c55;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
 }
 
 .flexivel h2 {
@@ -119,12 +169,21 @@ article {
     align-items: center;
     margin-left: auto;
 }
-
-#botao{
-    width: 60px;
+input{
+    width: 40%;
     height: 40px;
-    background: #949090;
-    border: 1px solid #000;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#botao{
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    background: #202c55;
+    border: none;
     font-size: 15px;
     padding: 5px;
     cursor: pointer;
@@ -164,8 +223,12 @@ article {
 }
 
 /*RESPONSIVIDADE */
-@media screen and (max-width: 730px){
+/*para smartphone ate 360px*/
+@media screen and (max-width: 360px){
 
+    section{
+        width: 100%;
+    }
     .flexivel{
         width: 100%;
         display: block;
@@ -174,12 +237,22 @@ article {
     .cartao {
         width: 50%;
         height: 35%;
+        margin-right: 80px;
+    }
+    .colunaCartao{
+        width: 100%;
+        height: 220px;
+        color: #fff;
+        margin: auto;
     }
 
     #apresentacao{
         text-align: center;
         margin: 15%;
         height: 25%;
+    }
+    #cartao1{
+    
     }
    
     .cartaoImagem{
@@ -188,7 +261,93 @@ article {
     #sobre{
         align-items: center;
         text-align: center;
-        
+
+    }
+    .sobre p{
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    
+}
+/*para smartphone ate 720px*/
+
+@media screen and (max-width: 720px)and (min-width: 361px){
+    .flexivel{
+        width: 100%;
+        display: block;
+    }
+
+    .cartao {
+        width: 50%;
+        height: 35%;
+        margin-right: 80px;
+    }
+    .colunaCartao{
+        width: 100%;
+        height: 220px;
+        color: #fff;
+        margin: auto;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+        width: 100%;
+    }
+   
+    .cartaoImagem{
+        margin: auto;
+    }
+    #sobre{
+        align-items: center;
+        text-align: center;
+
+    }
+    .sobre p{
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    
+}
+/*para tela ate 1024px*/
+@media screen and (max-width: 1024px)and (min-width: 721px){
+    .flexivel{
+        width: 100%;
+        align-items: center;
+        display: block;
+
+    }
+
+    .cartao {
+        width: 70%;
+        height: 35%;
+        margin-left: 50% ;
+        display: block;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+        width: 100%;
+    }
+   
+    #sobre{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+    }
+    .sobre p{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
     }
 
     
