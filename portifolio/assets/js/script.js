@@ -34,6 +34,76 @@ if(elements.length) {
         animaScroll();
     })
 }
+//VALIDACAO DO CONTATO=========================================
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const email = document.getElementById("email");
+
+//envio do formulario
+form.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    checkForm();
+    
+})
+
+email.addEventListener("blur",()=>{
+    checkInputEmail();
+});
+
+username.addEventListener("blur",()=>{
+    checkInputUsername();
+})
+
+//validacao do username
+function checkInputUsername(){
+    const usernameValue = username.value;
+    
+    if(usernameValue === ""){
+        //mostra menssagem de erro
+        errorInput(username,"Preencha com um nome");
+
+    }else{
+        const formItem = username.parentElement;
+        formItem.className = "form-content";
+    }
+}
+
+//validacao do email
+function checkInputEmail(){
+    const emailValue = email.value;
+    //validacoes
+    if(emailValue === ""){
+        errorInput(email,"O email é obrigatório.");
+    }else{
+        const formItem = email.parentElement;
+        formItem.className = "form-content";
+    }
+}
+
+//envia a mensagem de erro
+function errorInput(input, message){
+    const formItem = input.parentElement;
+    const textMessage = formItem.querySelector("p");
+    textMessage.innerText = message;
+
+    formItem.className = "form-content error";
+}
+
+//verifica se nao existe nenhum erro no formulario
+function checkForm(){
+    checkInputUsername();
+    checkInputEmail();
+
+    const formItem = form.querySelectorAll(".form-content")
+    const isValid = [...formItem].every( (item) => {
+        return item.className === "form-content";
+    });
+    if(isValid){
+    
+    }
+   
+
+}
 
 // MEDIA MOBILE ==============================================>
     function responsive(){

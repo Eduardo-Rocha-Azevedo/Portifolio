@@ -7,6 +7,7 @@
     
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" >
     <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
+
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
 </head>
@@ -96,22 +97,26 @@
         <article class="colunaCartao" data-anima="centro">
             
             <div class="cartao" id="cartao1">
-                <h2>Projeto 2</h2>
-                <p>TITULO</p>
+                <h2>Jogo da Cobrinha</h2>
                 
-                <p>texto explicativo</p>  
-                <button><a href="#">Acessar</a></button>
-        
+                <p>Projeto feito com a linguagem C, é uma reconstrução do clássico jogo da cobrinha</p>  
+                <p>Disponível apenas para Windowns</p>
+
+                <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Jogo-da-cobrinha-em-c">Acessar</a></button>
+                <button class="cartao_link"><a href="https://drive.google.com/file/d/1yPx_x7sptxnrZHdqtfXAMMqDWMYTcWv8/view?usp=sharing">Instalar</a></button>
         </article>
 
         <article class="colunaCartao" data-anima="centro">
         
             <div class="cartao" id="cartao1">
-                <h2>Projeto 3</h2>
-                <p>TITULO</p>
-                
-                <p>texto explicativo</p>  
-                <button><a href="#">Acessar</a></button>
+                <h2>Car Game </h2>
+    
+                <p>Jogo feito com a linguagem C++, trata-se de um jogo simples de corrida que utiliza entrada do
+                 usuário se mexer o carro</p>  
+                <p>Disponível apenas para Windowns</p> 
+
+                <button class="cartao_link"><a href="#">Acessar</a></button>
+                <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Instalar</a></button>
         
         </article>
         
@@ -129,30 +134,46 @@
         <div><br></div>
     </div>
 
-
-    <section id="contato" class="flexivel"></section>
-        <article class="sobre" data-anima="centro">
+        <section  class="form" id="contato">
             <h1>Entre em contato</h1>
             <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png" alt="github"></a>
             <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a>
             <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img src="assets/img/icons8-linkedin-50.png" alt=""></a>
            <br><br>
-            <h2>Increva-se </h2><br>
-            <form class="formulario" action="#" method="post">
-                <label for="nome" class="campoForm"><h3>Nome</h3></label>
-                <input type="text" id="nome" name="nome" required>
+            <form class="form" id="form" method="post" action="https://api.staticforms.xyz/submit">
+                <div class="form-content">
+                    <label for="username"><h4>Nome </h4></label>
+                    <input
+                     type="text" 
+                     id="username" 
+                     name="nome" 
+                     placeholder="Digite seu nome" 
+                     
+                     />
+                    <p>Aqui vai a mensagem de erro</p>
+                </div>    
+                <div class="form-content">
+                    <label for="email" class="form" autocomplete="on"><h4>Email</h4></label>
+                    <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                    />
+                    <p>Aqui vai a mensagem de erro</p>
+                </div>    
+                <div class="form-content">
+                    <h4>Digite uma menssagem</h4>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite aqui a menssagem"></textarea>
+                </div>
+                <input type="hidden" name="accessKey" value="d034fb02-4668-4503-8503-4758c71cda4e">
+                <input type="hidden" name="redirectTo"  value="https://example.com/contact/success">
                 
-                <label for="email" class="campoForm"><h3>Email</h3></label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-        
-                <input id="botao" type="submit" value="Enviar">
+                  <button type="submit"><input type="hidden" name="accessKey" value="d034fb02-4668-4503-8503-4758c71cda4e">Enviar</button>
+    
+            
             </form>
-        
-        </article>
-
-    </section>
-
+        </section>    
     <script src="assets/js/script.js"></script>
 
 </body>
