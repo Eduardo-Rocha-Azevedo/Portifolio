@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*RESTO DA PAGINA===============================================*/
+
+.cor {
+    background-color: #202020;
+ }
+
+section{
+    padding: 20px;  
+}
+
+#apresentacao {
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+    
+}
+.title{
+    color:#f7fbff;
+    display: flex;
+    text-align: center;   
+}
+.title h1 {
+    font-family: 'Black Ops One';
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+.title h2 {
+    font-family: 'Black Ops One';
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.title2 {
+    font-family: 'Black Ops One';
+    font-weight: 500;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+   
+}
+/*sobre mim*/
+.sobre h1{  
+    font-family: 'Black Ops One';
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+.sobre{
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.sobre p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+}
+.sobre img:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+/*projetos*/
+
+#projetoCard ,#projetoCard h2 {
+    color: #fff;
+
+}
+.colunaCartao :hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
+}
+
+
+.flexivel {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.colunaCartao{
+    margin-bottom: 15px;
+    width: 400px;
+    height: 220px;
+    color: #fff;
+    margin: auto;
+    
+}
+.colunaCartao h2{
+    color: #000;
+}
+.cartao{
+    width: 100px;
+    height: 80px;
+    margin-left: 40%;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+article {
+    width: 100%;
+    text-align: center;
+}
+
+
+#cartao1 {
+    width: 300px;
+    height: 200px;
+    background-color: #949090;
+    text-align: center;
+    margin: auto;
+    
+}
+.cartao_link{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Black Ops One';
+    margin-top: 10px;
+    margin-right: 8px ;
+    padding: 5px 5px;
+    border-radius: 2px;
+    background: #202c55;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.flexivel h2 {
+    color: #000000;
+    display: block;
+}
+/* contato*/
+#contato{
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario p{
+    font-weight: 40px;
+    align-items: center;
+    margin-left: auto;
+}
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: inline-block;
+    width: 30em;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.form-content p{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    background: #202c55;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.campoForm{
+    width: 40px;
+}
+.form-content.error input{
+    border-color: #ff3b25;
+}
+.form-content.error p{
+    color: #ff3b25;
+    visibility: visible;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 10%;
+
+}
+textarea{
+    padding: 10px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    width: 30em;
+}
+
+textarea:focus{
+    border-color: #202c55;
+    transition: all 0.5s;
+}
+.form-content input:focus{
+    border-color: #202c55;
+    transition: all 0.5s;
+}
+
+/* Animacoes*/
+
+[data-anima]{
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anima="esquerda"]{
+     transform: translate3d(-50px,0,0 );/*X Y Z*/
+}
+
+[data-anima="direita"]{
+    transform: translate3d(50,0,0);
+}
+
+[data-anima="centro"]{
+    transform: translate3d(0,50px,0);
+}
+
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/*RESPONSIVIDADE */
+/*para smartphone ate 360px*/
+@media screen and (max-width: 360px){
+
+    section{
+        width: 100%;
+    }
+    .flexivel{
+        width: 100%;
+        display: block;
+    }
+
+    .cartao {
+        width: 50%;
+        height: 35%;
+        margin-right: 80px;
+    }
+    .colunaCartao{
+        width: 100%;
+        height: 220px;
+        color: #fff;
+        margin: auto;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+    }
+   
+    .cartaoImagem{
+        margin: auto;
+    }
+    #sobre{
+        align-items: center;
+        text-align: center;
+
+    }
+    .sobre p{
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    .form-content input{
+        width: 100%;
+    }
+    .form-content textarea{
+        width: 100%;
+    }
+
+    
+}
+/*para smartphone ate 720px*/
+
+@media screen and (max-width: 720px)and (min-width: 361px){
+    .flexivel{
+        width: 100%;
+        display: block;
+    }
+
+    .cartao {
+        width: 50%;
+        height: 35%;
+        margin-right: 80px;
+    }
+    .colunaCartao{
+        width: 100%;
+        height: 220px;
+        color: #fff;
+        margin: auto;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+        width: 100%;
+    }
+   
+    .cartaoImagem{
+        margin: auto;
+    }
+    #sobre{
+        align-items: center;
+        text-align: center;
+
+    }
+    .sobre p{
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    
+}
+/*para tela ate 1024px*/
+@media screen and (max-width: 1024px)and (min-width: 721px){
+    .flexivel{
+        width: 100%;
+        align-items: center;
+        display: block;
+
+    }
+
+    .cartao {
+        width: 70%;
+        height: 35%;
+        margin-left: 50% ;
+        display: block;
+    }
+
+    #apresentacao{
+        text-align: center;
+        margin: 15%;
+        height: 25%;
+        width: 100%;
+    }
+   
+    #sobre{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+    }
+    .sobre p{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    
+}
+    
