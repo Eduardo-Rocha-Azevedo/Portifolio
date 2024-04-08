@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@200;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --black : #101010;
+    --darkGray: #191919;
+    --lightWhite: #e2e2e2;
+    --orange: #ca3c08af;
+}
 * {
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-family: 'Black Ops One', cursive;
+    font-family: 'Poppins', cursive;
     font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -18,7 +25,13 @@ html {
 /*RESTO DA PAGINA===============================================*/
 
 .cor {
-    background-color: #202020;
+    background-color: var(--black);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+ .cor2{
+    background-color: var(--darkGray);
  }
 
 section{
@@ -27,141 +40,175 @@ section{
 
 #apresentacao {
     margin-top: 5%;
-    text-align: center;
-    align-items: center;
-    margin-left: 40%;
+    text-align: left;
+    margin-left: 60px;
+
     
 }
 .title{
-    color:#f7fbff;
-    display: flex;
-    text-align: center;   
+   
+    background: -webkit-linear-gradient(#ca3c08, #f9004d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 .title h1 {
-    font-family: 'Black Ops One';
-    font-weight: 500;
+    font-family: 'Montserrat';
+    
     margin-bottom: 4%;
+    font-size: 80px;
 }
 .title h2 {
-    font-family: 'Black Ops One';
-    color: #fff;
-    font-weight: 300;
+    font-family: 'Montserrat';
+
+    font-weight: 45PX;
     margin-bottom: 20px;
 }
 .title2 {
-    font-family: 'Black Ops One';
-    font-weight: 500;
-    color: #fff;
+    font-family: 'Poppins';
+    
+    color: var(--lightWhite);
     margin: auto;
     text-align: center;
    
 }
 /*sobre mim*/
-.sobre h1{  
-    font-family: 'Black Ops One';
-    font-weight: 600;
-    font-size: 25px;
-    color: #000;
-    text-align: center;
-}
-.sobre{
-    margin-top: 5%;
-    text-align: center;
-    align-items: center;
-    
+
+/* Estilos para o texto à direita da imagem */
+.texto-direita {
+    width: 60%;
+    float: right;
+   
+    text-align: left; /* Alinhar o texto à esquerda */
 }
 
-.sobre p{
+/* Estilos adicionais para o texto */
+.texto-direita h1 {
+    font-family: 'Poppins';
+    font-size: 60px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+}
+
+.texto-direita h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+}
+
+.texto-direita p {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    margin-top: 0.5%;
-    margin-bottom: 5%;
+    font-size: 18px;
+    color: #c6c9d8cb;
 }
-.sobre img:hover{
-    transform: scale(1.5);
-    transition: all 0.5s;
+
+/* Estilos adicionais para a imagem */
+#foto{
+    width: auto;
+    height: 500px;
+    float: left;
+    margin-top: 0;
 }
+
+.sobre img{
+    border-radius: 10px;
+}
+
 
 /*projetos*/
 
-#projetoCard ,#projetoCard h2 {
-    color: #fff;
-
-}
-.colunaCartao :hover{
-    transform: scale(1.1);
-    transition: all 0.5s;
-    
+#projeto {
+    padding: 20px;
 }
 
-
+/* Modificações para o layout flexível dos projetos */
 .flexivel {
-    margin-top: 15px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 6px;
+}
 
+
+#projeto h1 {
+    font-family: 'Poppins';
+    font-size: 54px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
 }
-.colunaCartao{
-    margin-bottom: 15px;
-    width: 400px;
-    height: 220px;
-    color: #fff;
-    margin: auto;
-    
-}
+
 .colunaCartao h2{
-    color: #000;
-}
-.cartao{
-    width: 100px;
-    height: 80px;
-    margin-left: 40%;
-    align-items: center;
-    padding: 5px 5px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+
 }
 
-article {
-    width: 100%;
-    text-align: center;
-}
-
-
-#cartao1 {
-    width: 300px;
-    height: 200px;
-    background-color: #949090;
-    text-align: center;
-    margin: auto;
-    
-}
-.cartao_link{
-    text-decoration: none;
-    border: none;
+.colunaCartao {
+    width: 326px; /* Define a largura de cada coluna de projeto */
+    height: 500px;
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    background-color: var(--black);
     color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: 'Black Ops One';
-    margin-top: 10px;
-    margin-right: 8px ;
-    padding: 5px 5px;
-    border-radius: 2px;
-    background: #202c55;
+    padding: 20px;
+    transition: all 0.5s;
+    border: 0.1px solid #cccccc4b;
 }
+
+.colunaCartao p{
+    color: var(--lightWhite);
+    text-align: justify;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.colunaCartao button{
+    width: 95px;
+    height: 40px;
+    color: #fff;
+    background: #202c5500;
+    border-radius: 4px;
+    border: 1px solid var(--lightWhite);
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
 a{
     text-decoration: none;
     color: #fff;
-    transition: all 0.5s;
+    text-align: center;
 }
 
-.flexivel h2 {
-    color: #000000;
-    display: block;
+.colunaCartao:hover {
+    background: var(--orange,--darkGray); /* Altera a cor de fundo ao passar o mouse */
+  
+}
+
+
+.colunaCartao:nth-child(odd) {
+    margin-right: 0; /* Remove a margem direita da coluna ímpar */
+}
+
+.colunaCartao:nth-child(even) {
+    margin-left: 0; /* Remove a margem esquerda da coluna par */
+}
+
+#cartao1 {
+  
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    z-index: 1;
 }
 /* contato*/
 #contato{
@@ -169,6 +216,9 @@ a{
     text-align: center;
     align-items: center;
     
+}
+.contato{
+    background-color: var(--black);
 }
 .form{
     display: flex;
@@ -372,6 +422,12 @@ textarea:focus{
         width: 100%;
         margin: auto;
         font-size: 17px;
+    }
+    .form-content input{
+        width: 100%;
+    }
+    .form-content textarea{
+        width: 100%;
     }
 
     
