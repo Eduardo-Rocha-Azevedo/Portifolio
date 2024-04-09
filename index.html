@@ -1,171 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Azevedo</title>
-    
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" >
-    <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
 
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" rel="stylesheet" href="assets/css/responsividade.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
-                <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
                 <li class="nav-item"><a href="#sobre" class="nav-link" data-menu>Sobre</a></li>
-                <li class="nav-item"><a href="#contato"class="nav-link" data-menu>Contato</a></li>
-                
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
+
 
             </ul>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img  class="icon" src="assets/img/menu_white_36dp.svg" alt="menu"></button>
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="menu"></button>
             </div>
-            </nav>
+        </nav>
 
-              <div class="mobile-menu">
-                <ul>
-                   <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
-                   <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                   <li class="nav-item"><a href="#projeto" class="nav-link" data-menu>Projeto</a></li>
-                   <li class="nav-item"><a href="#contato"class="nav-link" data-menu>Contato</a></li>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#projeto" class="nav-link" data-menu>Projeto</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
 
-                 </ul>
-             </div>
+            </ul>
+        </div>
 
 
 
     </header>
     <div class="cor">
-       <section id="home" class="title" >
-        <br>
-        <div id="apresentacao"><br>
-            <h1>Olá, sou Eduardo Azevedo</h1><br>
-            <h2>Systems Developer</h2><br><br>
-            
-        </div>
-       
+        <section id="home" class="title">
+            <br>
+            <div id="apresentacao"><br>
+                <h1>Eduardo <br>Azevedo</h1><br>
+                <h2>Systems Developer</h2><br><br>
+
             </div>
-        </section>
+
+    </div>
+    </section>
     </div>
     
-    <section id="sobre" class="flexivel">
+    <section id="sobre" class="flexivel cor2">
         <article class="sobre" data-anima="centro">
-        
-            <h1>Sobre mim</h1><br>
-            
-            <p>Estou cursando Análise e Desenvolvimento de Sistemas,<br>já tenho conhecimento de algumas linguagens,
-               também cursei programação no Ensino Médio em 2021, onde apreendi a desenvolver web site com html,css e Js 
-            </p>
-            <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR </p>
-    
-            <br>
-            <h1>O que sei utilizar</h1><br>
-            <img src="assets/img/c++.png" alt="c++">
-            <img src="assets/img/icons8-css-50.png" alt="css">
-            <img src="assets/img/icons8-javascript.svg" alt="javaScript">
-            <img src="assets/img/html.png" alt="html"><br>
-            <img src="assets/img/qt.png" alt="">
+            <div><img src="assets/img/foto.png" alt="pc" id="foto"></div>
+            <div class="texto-direita">
+                <h1>Sobre</h1>
+                <p>Estou cursando Análise e Desenvolvimento de Sistemas,<br>já tenho conhecimento de algumas linguagens,
+                    também cursei programação no Ensino Médio em 2021, onde apreendi a desenvolver web site com html,css e
+                    Js</p>
+                <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR </p>
+                <h2>Conhecimento Técnico</h2>
+                <p>Estas são a tecnologias que utilizo para desenvolver:</p><br>
+                <img src="assets/img/java.png" alt="java 17">
+                <img src="assets/img/icons8-css-50.png" alt="css">
+                <img src="assets/img/js.png" alt="javaScript">
+                <img src="assets/img/html.png" alt="html">
+            </div>
         </article>
     </section>
-    </div> 
-    
-    <div class="cor" id="projeto">  <br>
-     <h1 class="title2">Projetos</h1>
-    
-      
-        <article class="colunaCartao" data-anima="centro">
-            
-            <div class="cartao" id="cartao1">
-                
-                <h2>Bloco de Notas</h2>
-                <br>
-                <p>Projeto feito com C++ e Qt, consiste em um software capaz de abrir arquivos .txt, salvar e editar</p>  
-                <p>Disponível apenas para Windowns</p>
-                <br>
-                <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Bloco_Notas">Acessar</a></button>
-                <button class="cartao_link"><a href="https://drive.google.com/file/d/1miWJTW9v0WZLqarn7N6qkDgG3uxHliGK/view">Instalar</a></button>
-
-                </div>
-                
-        </article>
-
-        <article class="colunaCartao" data-anima="centro">
-            
-            <div class="cartao" id="cartao1">
-                <h2>Jogo da Cobrinha</h2>
-                
-                <p>Projeto feito com a linguagem C, é uma reconstrução do clássico jogo da cobrinha</p>  
-                <p>Disponível apenas para Windowns</p>
-
-                <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Jogo-da-cobrinha-em-c">Acessar</a></button>
-                <button class="cartao_link"><a href="https://drive.google.com/file/d/1yPx_x7sptxnrZHdqtfXAMMqDWMYTcWv8/view?usp=sharing">Instalar</a></button>
-        </article>
-
-        <article class="colunaCartao" data-anima="centro">
-        
-            <div class="cartao" id="cartao1">
-                <h2>Car Game </h2>
-    
-                <p>Jogo feito com a linguagem C++, trata-se de um jogo simples de corrida que utiliza entrada do
-                 usuário se mexer o carro</p>  
-                <p>Disponível apenas para Windowns</p> 
-
-                <button class="cartao_link"><a href="#">Acessar</a></button>
-                <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Instalar</a></button>
-        
-        </article>
     
     </div>
-    <div id="contato">
-        <h1>Entre em contato</h1>
-            <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png" alt="github"></a>
-            <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img src="assets/img/icons8-linkedin-50.png" alt=""></a>
-           <br><br>
-    </div>
-        <section  class="form">
-           
-            <form class="form" id="form" action="https://formsubmit.co/ajax/eduazevedo5414@gmail.com" method="POST" data-form>
-                <div class="form-content">
-                    <label for="username"><h4>Nome </h4></label>
-                    <input
-                     type="text" 
-                     id="username" 
-                     name="nome" 
-                     placeholder="Digite seu nome" 
-                     required
-                     
-                     />
-                    <p>Aqui vai a mensagem de erro</p>
-                </div>    
-                <div class="form-content">
-                    <label for="email" class="form" autocomplete="on"><h4>Email</h4></label>
-                    <input 
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Digite seu email"
-                    required
-                    />
-                    <p>Aqui vai a mensagem de erro</p>
-                </div>    
-                <div class="form-content">
-                    <h4>Digite uma menssagem</h4>
-                    <textarea name="mensagem" cols="30" rows="10" placeholder="Digite aqui a menssagem" required></textarea>
-                </div>
-                
-                  <button type="submit" data-button>Enviar</button>
+    <section class="cor servico" id="servicos">
+        <div>
+            <h1>Serviços</h1>
+        </div>
+        <div class="texto-direita">
+            <div class="servico-item">
+                <article class="coluna" data-anima="centro">
+                    <div class="icone"><img src="assets/img/icons8-stack-of-paper-60.png" alt="gerenciamento"></div>
+                    <h2>Web Site Full-Stack</h2>
+                    <p>Desenvolvimento, análise de requisitos, conexão com banco de dados,design, responsividade.</p>
+                </article>
     
-            
-            </form>
-        </section>    
+                <article class="coluna" data-anima="centro">
+                    <div class="icone"><img src="assets/img/banco.png" alt="gerenciamento"></div>
+                    <h2>Web Site Back-end</h2>
+                    <p>Conexão com banco de dados, projeto MVC, SpringBoot.</p>
+                </article>
+                <article class="coluna" data-anima="centro">
+                    <div class="icone"><img src="assets/img/transmitir.png" alt="gerenciamento"></div>
+                    <h2>Web Site Front-end</h2>
+                    <p>Desenvolvimento, análise de requisitos, design, responsividade.</p>
+                </article>
+                <article class="coluna" data-anima="centro">
+                    <div class="icone"><img src="assets/img/icons8-manutenção-60.png" alt="gerenciamento"></div>
+                    <h2>Manutenção</h2>
+                    <p>Manutenção de web sites.</p>
+                </article>
+                
+            </div>
+        </div>       
+    </section>
+    
+    <section class="cor2" id="projeto">
+        <div> <br>
+            <h1 class="title2">Projetos</h1>
+    
+            <div class="flexivel">
+    
+                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem1.jpg');">
+    
+                    <div class="cartao" id="cartao1">
+                        <h2>Bloco de Notas</h2>
+                    
+                        <p>Projeto feito com C++ e Qt, consiste em um software capaz de abrir arquivos .txt, salvar e editar.</p>
+                        <p></p>
+                        <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Bloco_Notas">Acessar</a></button>
+                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1miWJTW9v0WZLqarn7N6qkDgG3uxHliGK/view">Repositório </a></button>
+                    </div>
+    
+                </article>
+    
+                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem2.jpg');">
+    
+                    <div class="cartao" id="cartao2">
+                        <h2>Ancient Ruins</h2>
+                        <p>O jogo é desenvolvido exclusivamente na linguagem de programação Java. Tudo é escrito do zero,
+                            incluindo o motor do jogo, usando a biblioteca de classes Java padrão.</p>
+                        <button class="cartao_link"><a href="https://eduardo-azevedo.itch.io/ancient-ruins">Acessar</a></button>
+                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1yPx_x7sptxnrZHdqtfXAMMqDWMYTcWv8/view?usp=sharing">Repositório </a></button>
+                    </div>
+    
+                </article>
+    
+                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem3.jpg');">
+    
+                    <div class="cartao" id="cartao3">
+                        <h2>Rh web</h2>
+                        <p>Web site feito para o estudo do back-end usando Java e Spring Boot e MySQL. Sendo possível adicionar candidatos e funcionários.</p>
+                        <button class="cartao_link"><a href="#">Acessar</a></button>
+                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Repositório </a></button>
+                    </div>
+    
+                </article>
+
+                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem3.jpg');">
+    
+                    <div class="cartao" id="cartao4">
+                        <h2>Agência Viagem</h2>
+                        <p>Web site feito para o estudo do Full-Stack usando Java e Spring Boot e MySQL. Sendo possível adicionar pacotes de viagens.</p>
+                        <button class="cartao_link"><a href="#">Acessar</a></button>
+                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Repositório </a></button>
+                    </div>
+    
+                </article>
+    
+            </div>
+        </div>
+    </section>
+    
+    
+   
+    <section class="cor">
+
+        <form class="form" id="form" action="https://formsubmit.co/ajax/eduazevedo5414@gmail.com" method="POST"
+            data-form>
+            <div class="form-content">
+                <div id="contato">
+                    <h1>Entre em contato</h1>
+                    <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png"
+                            alt="github"></a>
+                    <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img
+                            src="assets/img/icons8-linkedin-50.png" alt=""></a>
+                    <br><br>
+                </div>
+                <label for="username">
+                    <h4>Nome </h4>
+                </label>
+                <input type="text" id="username" name="nome" placeholder="Digite seu nome" required />
+                <p>Aqui vai a mensagem de erro</p>
+            </div>
+            <div class="form-content">
+                <label for="email" class="form" autocomplete="on">
+                    <h4>Email</h4>
+                </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+                <p>Aqui vai a mensagem de erro</p>
+            </div>
+            <div class="form-content">
+                <h4>Digite uma menssagem</h4>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Digite aqui a menssagem" required></textarea>
+            </div>
+
+            <button type="submit" data-button>Enviar</button>
+
+
+        </form>
+    </section>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/form.js"></script>
 
 </body>
+
 </html>

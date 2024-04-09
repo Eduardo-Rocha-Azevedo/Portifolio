@@ -36,6 +36,7 @@ html {
 
 section{
     padding: 20px;  
+    width: 100%;
 }
 
 #apresentacao {
@@ -112,7 +113,50 @@ section{
 }
 
 .sobre img{
-    border-radius: 10px;
+    border-radius: 15px;
+}
+/* servico */
+.servico {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.servico h1 {
+    font-family: 'Poppins';
+    font-size: 60px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-right: 80px;
+    margin-left: 60px; /* Adicionando margem direita para separar os itens */
+}
+
+.servico-item {
+    display: flex;
+}
+
+.coluna {
+    flex: 1; /* Faz com que os artigos ocupem o mesmo espaço horizontalmente */
+    margin-right: 50px; /* Adicionando margem entre os itens */
+    width: 290px;
+    height: 310px;
+    margin-top: 80px;
+    padding: 0 15px;
+    
+}
+
+
+.coluna:last-child {
+    margin-right: 0; /* Removendo a margem direita do último item */
+}
+
+.coluna h2 {
+    font-family: 'Poppins';
+    font-size: 19px;
+    color: var(--lightWhite);
+    margin-top: 20px;
 }
 
 
@@ -153,11 +197,11 @@ section{
     height: 500px;
     margin-bottom: 20px; 
     border-radius: 10px;
-    background-color: var(--black);
+    background-color: var(--darkGray);
     color: #fff;
     padding: 20px;
     transition: all 0.5s;
-    border: 0.1px solid #cccccc4b;
+    border: 0.1px solid #3535354b;
 }
 
 .colunaCartao p{
@@ -193,11 +237,6 @@ a{
   
 }
 
-
-.colunaCartao:nth-child(odd) {
-    margin-right: 0; /* Remove a margem direita da coluna ímpar */
-}
-
 .colunaCartao:nth-child(even) {
     margin-left: 0; /* Remove a margem esquerda da coluna par */
 }
@@ -224,6 +263,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--lightWhite);
 }
 .formulario p{
     font-weight: 40px;
@@ -246,6 +286,7 @@ a{
     border-radius: 8px;
     padding: 8px;
     border: 1px solid #ccc;
+    margin-left: 10px;
 }
 .form-content p{
     position: absolute;
@@ -330,144 +371,5 @@ textarea:focus{
     transform: translate3d(0,0,0);
 }
 
-/*RESPONSIVIDADE */
-/*para smartphone ate 360px*/
-@media screen and (max-width: 360px){
 
-    section{
-        width: 100%;
-    }
-    .flexivel{
-        width: 100%;
-        display: block;
-    }
-
-    .cartao {
-        width: 50%;
-        height: 35%;
-        margin-right: 80px;
-    }
-    .colunaCartao{
-        width: 100%;
-        height: 220px;
-        color: #fff;
-        margin: auto;
-    }
-
-    #apresentacao{
-        text-align: center;
-        margin: 15%;
-        height: 25%;
-    }
-   
-    .cartaoImagem{
-        margin: auto;
-    }
-    #sobre{
-        align-items: center;
-        text-align: center;
-
-    }
-    .sobre p{
-        width: 100%;
-        margin: auto;
-        font-size: 17px;
-    }
-
-    .form-content input{
-        width: 100%;
-    }
-    .form-content textarea{
-        width: 100%;
-    }
-
-    
-}
-/*para smartphone ate 720px*/
-
-@media screen and (max-width: 720px)and (min-width: 361px){
-    .flexivel{
-        width: 100%;
-        display: block;
-    }
-
-    .cartao {
-        width: 50%;
-        height: 35%;
-        margin-right: 80px;
-    }
-    .colunaCartao{
-        width: 100%;
-        height: 220px;
-        color: #fff;
-        margin: auto;
-    }
-
-    #apresentacao{
-        text-align: center;
-        margin: 15%;
-        height: 25%;
-        width: 100%;
-    }
-   
-    .cartaoImagem{
-        margin: auto;
-    }
-    #sobre{
-        align-items: center;
-        text-align: center;
-
-    }
-    .sobre p{
-        width: 100%;
-        margin: auto;
-        font-size: 17px;
-    }
-    .form-content input{
-        width: 100%;
-    }
-    .form-content textarea{
-        width: 100%;
-    }
-
-    
-}
-/*para tela ate 1024px*/
-@media screen and (max-width: 1024px)and (min-width: 721px){
-    .flexivel{
-        width: 100%;
-        align-items: center;
-        display: block;
-
-    }
-
-    .cartao {
-        width: 70%;
-        height: 35%;
-        margin-left: 50% ;
-        display: block;
-    }
-
-    #apresentacao{
-        text-align: center;
-        margin: 15%;
-        height: 25%;
-        width: 100%;
-    }
-   
-    #sobre{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-
-    }
-    .sobre p{
-        display: flex;
-        width: 100%;
-        margin: auto;
-        font-size: 17px;
-    }
-
-    
-}
     
