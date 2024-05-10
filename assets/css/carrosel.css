@@ -1,0 +1,177 @@
+:root{
+    --black : #101010;
+    --darkGray: #191919;
+    --lightWhite: #e2e2e2;
+    --orange: #ca3c08af;
+}
+/* Carrossel */
+
+.carrossel {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #141414;
+    color: #fff;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    z-index: 1; /* Garante que os botões de slide estejam acima da lista de imagens */
+}
+
+.slider-wrapper .slide-button:hover {
+    background-color: #444;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: 0;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: 0;
+}
+
+.slider-wrapper .image-list {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0 -10px; /* Adiciona margens negativas para compensar o padding do container */
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 500px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
+
+.slider-wrapper .image-item:hover{
+    background: linear-gradient(to bottom, #ca3c08e7, #f9004d, #00000000);
+}
+.carrossel h1{
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--lightWhite);
+    text-align: center;
+}
+
+.image-item h2{
+    margin-bottom: 15px;
+    margin-top: 10vh;
+}
+.image-item p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.image-item {
+    position: relative; /* Adiciona posição relativa para que os botões fiquem posicionados relativamente ao item */
+}
+
+.image-item:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image-item button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--lightWhite);
+    border: 1px solid var(--lightWhite);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    /* Define a distância entre os botões e a parte inferior do item */
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 3px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background: #141414;
+    cursor: pointer;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+
+}
+.image-item {
+    position: relative;
+    /* Adicione outras propriedades de estilo conforme necessário */
+}
+
+.cartao_link {
+    position: absolute;
+    bottom: 10vh; /* Ajuste conforme necessário */
+}
+
+.cartao_link:first-child {
+    left: 80px; /* Ajuste conforme necessário */
+}
+
+.cartao_link:last-child {
+    right: 15px; /* Ajuste conforme necessário */
+}

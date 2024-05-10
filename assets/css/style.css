@@ -12,9 +12,6 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', cursive;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -28,11 +25,11 @@ html {
     background-color: var(--black);
     background-size: cover;
     background-repeat: no-repeat;
- }
+}
 
- .cor2{
+.cor2{
     background-color: var(--darkGray);
- }
+}
 
 section{
     padding: 20px;  
@@ -43,47 +40,44 @@ section{
     margin-top: 5%;
     text-align: left;
     margin-left: 60px;
-
-    
 }
+
 .title{
-   
     background: -webkit-linear-gradient(#ca3c08, #f9004d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
+
 .title h1 {
     font-family: 'Montserrat';
-    
     margin-bottom: 4%;
     font-size: 80px;
 }
+
 .title h2 {
     font-family: 'Montserrat';
-
     font-weight: 45PX;
     margin-bottom: 20px;
 }
+
 .title2 {
     font-family: 'Poppins';
-    
     color: var(--lightWhite);
     margin: auto;
     text-align: center;
-   
 }
-/*sobre mim*/
 
-/* Estilos para o texto à direita da imagem */
+/*sobre mim*/
+#sobre{
+    z-index: 1;
+}
+
 .texto-direita {
     width: 60%;
     float: right;
-   
-    text-align: left; /* Alinhar o texto à esquerda */
+    text-align: left;
 }
 
-/* Estilos adicionais para o texto */
 .texto-direita h1 {
     font-family: 'Poppins';
     font-size: 60px;
@@ -104,7 +98,6 @@ section{
     color: #c6c9d8cb;
 }
 
-/* Estilos adicionais para a imagem */
 #foto{
     width: auto;
     height: 500px;
@@ -115,11 +108,15 @@ section{
 .sobre img{
     border-radius: 15px;
 }
+
 /* servico */
+#servico {
+    z-index: 9;
+}
+
 .servico {
     display: flex;
     align-items: flex-start;
-    
 }
 
 .servico h1 {
@@ -130,26 +127,28 @@ section{
     margin-bottom: 30px;
     text-align: left;
     margin-right: 80px;
-    margin-left: 60px; /* Adicionando margem direita para separar os itens */
+    margin-left: 60px;
 }
 
 .servico-item {
     display: flex;
 }
 
+.servico-item article:hover{
+    background: linear-gradient(to bottom, #ca3c08e7, #f9004d );
+}
+
 .coluna {
-    flex: 1; /* Faz com que os artigos ocupem o mesmo espaço horizontalmente */
-    margin-right: 50px; /* Adicionando margem entre os itens */
+    flex: 1;
+    margin-right: 50px;
     width: 290px;
     height: 310px;
     margin-top: 80px;
     padding: 0 15px;
-    
 }
 
-
 .coluna:last-child {
-    margin-right: 0; /* Removendo a margem direita do último item */
+    margin-right: 0;
 }
 
 .coluna h2 {
@@ -159,49 +158,38 @@ section{
     margin-top: 20px;
 }
 
-
 /*projetos*/
 
 #projeto {
     padding: 20px;
 }
 
-/* Modificações para o layout flexível dos projetos */
+/* Modificações para o layout flexível dos projetos dentro do carrossel */
 .flexivel {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: 6px;
+    flex-wrap: nowrap; /* Impede que os itens quebrem a linha */
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 20px; /* Adiciona um espaçamento interno para evitar que os itens fiquem colados às bordas do carrossel */
 }
 
-
-#projeto h1 {
-    font-family: 'Poppins';
-    font-size: 54px;
-    color: var(--lightWhite);
-    margin-top: 60px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.colunaCartao h2{
-    font-family: 'Poppins';
-    font-size: 30px;
-    color: var(--lightWhite);
-    margin-top: 60px;
-
-}
-
+/* Ajustes para cada projeto */
 .colunaCartao {
-    width: 326px; /* Define a largura de cada coluna de projeto */
+    flex: 0 0 auto; /* Define a largura mínima e máxima dos itens para que não quebrem a linha */
+    width: 326px; /* Largura de cada projeto */
     height: 500px;
-    margin-bottom: 20px; 
+    margin-right: 20px; /* Espaçamento entre os projetos */
     border-radius: 10px;
     background-color: var(--darkGray);
     color: #fff;
     padding: 20px;
     transition: all 0.5s;
     border: 0.1px solid #3535354b;
+}
+
+.colunaCartao:last-child {
+    margin-right: 0; /* Removendo a margem direita do último projeto */
 }
 
 .colunaCartao p{
@@ -234,30 +222,40 @@ a{
 
 .colunaCartao:hover {
     background: var(--orange,--darkGray); /* Altera a cor de fundo ao passar o mouse */
-  
 }
 
 .colunaCartao:nth-child(even) {
-    margin-left: 0; /* Remove a margem esquerda da coluna par */
+    margin-left: 0; /* Remove a margem esquerda do projeto par */
 }
 
 #cartao1 {
-  
     height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     z-index: 1;
 }
+
 /* contato*/
 #contato{
     margin-top: 5%;
     text-align: center;
     align-items: center;
-    
 }
+
 .contato{
     background-color: var(--black);
+}
+#contato h1{
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#contato img:hover{
+   
 }
 .form{
     display: flex;
@@ -265,16 +263,19 @@ a{
     align-items: center;
     color: var(--lightWhite);
 }
+
 .formulario p{
     font-weight: 40px;
     align-items: center;
     margin-left: auto;
 }
+
 .form-content{
     margin-bottom: 8px;
     padding-bottom: 18px;
     position: relative;
 }
+
 .form-content label{
     display: inline-block;
     margin-bottom: 4px;
@@ -285,24 +286,27 @@ a{
     width: 30em;
     border-radius: 8px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #0b45b1;
     margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .form-content p{
     position: absolute;
     bottom: -8px;
     left: 0;
     visibility: hidden;
 }
+
 .form button{
-    width: 90px;
+    width: 95px;
     height: 40px;
-    color: #fff;
-    background: #202c55;
+    color: var(--lightWhite);
+    background: #202c0000;
     border-radius: 8px;
-    border: none;
+    border: 1px solid var(--lightWhite);
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     margin-top: 14px;
 }
@@ -315,21 +319,24 @@ a{
 .campoForm{
     width: 40px;
 }
+
 .form-content.error input{
     border-color: #ff3b25;
 }
+
 .form-content.error p{
     color: #ff3b25;
     visibility: visible;
     font-size: 14px;
     text-align: center;
     margin-left: 10%;
-
 }
+
 textarea{
     padding: 10px;
     outline: none;
-    border: 2px solid #ccc;
+    border: 1px solid #0b45b1;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 8px;
     font-size: 15px;
     margin-top: 10px;
@@ -342,6 +349,7 @@ textarea:focus{
     border-color: #202c55;
     transition: all 0.5s;
 }
+
 .form-content input:focus{
     border-color: #202c55;
     transition: all 0.5s;
@@ -355,7 +363,7 @@ textarea:focus{
 }
 
 [data-anima="esquerda"]{
-     transform: translate3d(-50px,0,0 );/*X Y Z*/
+     transform: translate3d(-50px,0,0 );
 }
 
 [data-anima="direita"]{
@@ -370,6 +378,3 @@ textarea:focus{
     opacity: 1;
     transform: translate3d(0,0,0);
 }
-
-
-    

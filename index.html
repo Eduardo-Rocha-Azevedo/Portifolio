@@ -9,8 +9,9 @@
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" rel="stylesheet" href="assets/css/responsividade.css">
+    <link rel="stylesheet" href="assets/css/carrosel.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
                 <li class="nav-item"><a href="#sobre" class="nav-link" data-menu>Sobre</a></li>
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projeto</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
 
 
@@ -35,7 +36,7 @@
                 <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
                 <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#projeto" class="nav-link" data-menu>Projeto</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link" data-menu>Projeto</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
 
             </ul>
@@ -56,7 +57,6 @@
     </div>
     </section>
     </div>
-    
     <section id="sobre" class="flexivel cor2">
         <article class="sobre" data-anima="centro">
             <div><img src="assets/img/foto.png" alt="pc" id="foto"></div>
@@ -65,7 +65,7 @@
                 <p>Estou cursando Análise e Desenvolvimento de Sistemas,<br>já tenho conhecimento de algumas linguagens,
                     também cursei programação no Ensino Médio em 2021, onde apreendi a desenvolver web site com html,css e
                     Js</p>
-                <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR </p>
+                <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR. </p>
                 <h2>Conhecimento Técnico</h2>
                 <p>Estas são a tecnologias que utilizo para desenvolver:</p><br>
                 <img src="assets/img/java.png" alt="java 17">
@@ -108,66 +108,82 @@
             </div>
         </div>       
     </section>
-    
-    <section class="cor2" id="projeto">
-        <div> <br>
-            <h1 class="title2">Projetos</h1>
-    
-            <div class="flexivel">
-    
-                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem1.jpg');">
-    
-                    <div class="cartao" id="cartao1">
-                        <h2>Bloco de Notas</h2>
-                    
-                        <p>Projeto feito com C++ e Qt, consiste em um software capaz de abrir arquivos .txt, salvar e editar.</p>
-                        <p></p>
-                        <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Bloco_Notas">Acessar</a></button>
-                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1miWJTW9v0WZLqarn7N6qkDgG3uxHliGK/view">Repositório </a></button>
-                    </div>
-    
-                </article>
-    
-                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem2.jpg');">
-    
-                    <div class="cartao" id="cartao2">
-                        <h2>Ancient Ruins</h2>
-                        <p>O jogo é desenvolvido exclusivamente na linguagem de programação Java. Tudo é escrito do zero,
-                            incluindo o motor do jogo, usando a biblioteca de classes Java padrão.</p>
-                        <button class="cartao_link"><a href="https://eduardo-azevedo.itch.io/ancient-ruins">Acessar</a></button>
-                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1yPx_x7sptxnrZHdqtfXAMMqDWMYTcWv8/view?usp=sharing">Repositório </a></button>
-                    </div>
-    
-                </article>
-    
-                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem3.jpg');">
-    
-                    <div class="cartao" id="cartao3">
-                        <h2>Rh web</h2>
-                        <p>Web site feito para o estudo do back-end usando Java e Spring Boot e MySQL. Sendo possível adicionar candidatos e funcionários.</p>
-                        <button class="cartao_link"><a href="#">Acessar</a></button>
-                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Repositório </a></button>
-                    </div>
-    
-                </article>
 
-                <article class="colunaCartao" data-anima="centro" style="background-image: url('caminho/para/imagem3.jpg');">
+    <section class="carrossel cor2" id="projetos">
+        <div class="container">
+            <h1>Projetos</h1>
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                <div class="image-list">
+                    <article class="image-item">
+                        <div class="cartao" id="cartao1">
+                            <h2>Bloco de Notas</h2>
+                            <p>Projeto feito com C++ e Qt, consiste em um software capaz de abrir arquivos .txt, salvar e editar.</p>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Bloco_Notas">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://drive.google.com/file/d/1miWJTW9v0WZLqarn7N6qkDgG3uxHliGK/view">Repositório </a></button>
+                        </div>
+                    </article>
+                    <!-- Adicione mais artigos conforme necessário -->
+                    <article class="image-item">
+                        <div class="cartao" id="cartao2">
+                            <h2>Ancient Ruins</h2>
+                            <p>O jogo é desenvolvido exclusivamente na linguagem de programação Java. Tudo é escrito do zero, incluindo o motor do jogo, usando a biblioteca de classes Java padrão.</p>
+                            <button class="cartao_link"><a href="https://eduardo-azevedo.itch.io/ancient-ruins">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Adventure-Game">Repositório </a></button>
+                        </div>
+                    </article>
+                    <article class="image-item">
     
-                    <div class="cartao" id="cartao4">
-                        <h2>Agência Viagem</h2>
-                        <p>Web site feito para o estudo do Full-Stack usando Java e Spring Boot e MySQL. Sendo possível adicionar pacotes de viagens.</p>
-                        <button class="cartao_link"><a href="#">Acessar</a></button>
-                        <button class="cartao_link"><a href="https://drive.google.com/file/d/1FIeAulTSOjeag3rzgc_vbto0MHrNNDcs/view?usp=sharing">Repositório </a></button>
+                        <div class="cartao" id="cartao3">
+                            <h2>Rh web</h2>
+                            <p>Web site feito para o estudo do back-end usando Java e Spring Boot e MySQL. Sendo possível adicionar candidatos e funcionários.</p>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Rh-web-site">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Rh-web-site">Repositório </a></button>
+                        </div>
+        
+                    </article>
+                    <article class="image-item">
+        
+                        <div class="cartao" id="cartao4">
+                            <h2>Agência Viagem</h2>
+                            <p>Web site feito para o estudo do Full-Stack usando Java e Spring Boot e MySQL. Sendo possível adicionar pacotes de viagens.</p>
+                            <button class="cartao_link"><a href="https://eduardo-rocha-azevedo.github.io/Agencia-Site/">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Agencia-Site">Repositório </a></button>
+                        </div>
+        
+                    </article>
+                    <article class="image-item">
+        
+                        <div class="cartao" id="cartao4">
+                            <h2>API File Server</h2>
+                            <p>A API de Armazenamento de Arquivos permite fazer upload, download e listar arquivos armazenados no servidor.</p>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Api-File-Server">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Api-File-Server">Repositório </a></button>
+                        </div>
+        
+                    </article>
+                    <article class="image-item">
+        
+                        <div class="cartao" id="cartao4">
+                            <h2>Save the Bunny</h2>
+                            <p>Jogo feito para android apartir do android 8.1</p>
+                            <button class="cartao_link"><a href="https://eduardo-azevedo.itch.io/save-the-banny">Acessar</a></button>
+                            <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Save-the-Bunny">Repositório </a></button>
+                        </div>
+        
+                    </article>
+        
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
                     </div>
-    
-                </article>
-    
+                </div>
             </div>
         </div>
     </section>
-    
-    
-   
+
     <section class="cor">
 
         <form class="form" id="form" action="https://formsubmit.co/ajax/eduazevedo5414@gmail.com" method="POST"
@@ -177,7 +193,7 @@
                     <h1>Entre em contato</h1>
                     <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png"
                             alt="github"></a>
-                    <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a>
+                    <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a><p>email</p>
                     <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img
                             src="assets/img/icons8-linkedin-50.png" alt=""></a>
                     <br><br>
