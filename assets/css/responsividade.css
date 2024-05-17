@@ -36,7 +36,7 @@
   .texto-direita {
     float: right;
     justify-content: center;
-    text-align: justify; /* Alinhar o texto à esquerda */
+    text-align: left; /* Alinhar o texto à esquerda */
   }
 
   /* Estilos adicionais para o texto */
@@ -65,6 +65,7 @@
     float: center;
     margin-top: 0;
     margin-left: 10%;
+    display: none;
   }
 
   .sobre img {
@@ -79,26 +80,40 @@
   }
 
   .servico h1 {
-    margin-left: 0;
     text-align: center;
     font-size: 36px;
-    margin-top: 20px; /* Adicionado espaço entre o título e os artigos */
+    margin-top: 20px; 
+    margin-bottom: 0;/* Adicionado espaço entre o título e os artigos */
   }
-
+  .servico h2{
+    font-size: 26px;
+    
+  }
   .servico-item {
-    display: flex; /* Adicionando display flex para os itens de serviço */
-    flex-wrap: wrap; /* Permitindo que os itens quebrem para a próxima linha se necessário */
-    justify-content: center; /* Centralizando os itens horizontalmente */
-
-    text-align: justify;
+    display: block;
+    height: auto;
   }
+  .icone{
+   display: none;
+  }
+  .servico-item article{
+    background: linear-gradient(to bottom, #be4215e7, #ec1358 );
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 200px;
+}
 
   .coluna {
-    margin-right: 40px; /* Adicionando margem entre os itens */
     max-width: 240px;
     height: auto;
-    margin-top: 80px;
+  
   }
+  .texto-direita{
+    margin-top: 15px;
+  }
+
   .coluna:hover {
     background: var(--orange); /* Altera a cor de fundo ao passar o mouse */
     transition: all 0.5s;
@@ -112,7 +127,29 @@
   .form button {
     width: 80px;
   }
+  #next-slide{
+    display: none;
+  }
+  #prev-slide{
+    display: none;
+  }
 
+  #next-slide:active{
+    display: none;
+  }
+  .slider-wrapper .slide-button{
+    display: none!important;
+
+}
+
+.slider-wrapper .image-item{
+  height: 350px;
+  margin-top: 8px;
+}
+
+.servico h1{
+  text-align: center;
+}
   /* Projeto */
   .flexivel {
     display: flex;
@@ -134,19 +171,35 @@
     font-family: "Poppins";
     font-size: 26px;
     color: var(--lightWhite);
-    margin-top: 60px;
+    margin-top: 10px;
   }
+  .carrossel h1{
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--lightWhite);
+    text-align: center;
+}
 
-  .colunaCartao {
-    width: 290px; /* Define a largura de cada coluna de projeto */
-    height: 400px;
-    border-radius: 10px;
-    background-color: var(--darkGray);
-    color: #fff;
+.image-item h2{
+    margin-bottom: 15px;
+    margin-top: 2vh;
+}
+
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 40px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
     padding: 20px;
-    transition: all 0.5s;
-    border: 0.1px solid #3535354b;
-  }
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
 
   .colunaCartao p {
     color: var(--lightWhite);
@@ -170,6 +223,20 @@
     margin-bottom: 20px;
     align-items: center;
   }
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 300px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
+  
 }
 @media screen and (max-width: 540px) and (min-width: 361px) {
   #apresentacao {
@@ -257,13 +324,9 @@
   }
 
   .servico-item {
-    display: flex; /* Adicionando display flex para os itens de serviço */
-    flex-wrap: wrap; /* Permitindo que os itens quebrem para a próxima linha se necessário */
-    justify-content: center; /* Centralizando os itens horizontalmente */
-
-    text-align: justify;
+    display: block;
+   
   }
-
   .coluna {
     margin-right: 40px; /* Adicionando margem entre os itens */
     max-width: 240px;
@@ -274,7 +337,9 @@
     background: var(--orange); /* Altera a cor de fundo ao passar o mouse */
     transition: all 0.5s;
   }
-
+  .coluna p{
+    text-align: left;
+  }
   .form-content input,
   .form-content textarea {
     width: 90%;
@@ -283,7 +348,10 @@
   .form button {
     width: 80px;
   }
+  .slider-wrapper .slide-button{
+    display: none!important;
 
+}
   /* Projeto */
   .flexivel {
     display: flex;
@@ -300,6 +368,28 @@
     margin-bottom: 30px;
     text-align: center;
   }
+  .carrossel h1{
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--lightWhite);
+    text-align: center;
+}
+
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 350px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
 
   .colunaCartao h2 {
     font-family: "Poppins";
@@ -404,7 +494,10 @@
   }
 
   /* Serviços */
+  .slider-wrapper .slide-button{
+    display: none!important;
 
+}
   /* servico */
   .servico {
     display: flex;
@@ -422,16 +515,14 @@
   .servico-item {
     display: flex; /* Adicionando display flex para os itens de serviço */
     flex-wrap: wrap; /* Permitindo que os itens quebrem para a próxima linha se necessário */
-    justify-content: center; /* Centralizando os itens horizontalmente */
-    margin-right: 15px;
+    
   }
 
   .coluna {
-    margin-right: 40px; /* Adicionando margem entre os itens */
-    max-width: 240px;
-    height: auto;
+    height: 350px;
     margin-top: 80px;
-    padding: 0 15px;
+    padding: 15px;
+   
   }
   .coluna:hover {
     background: var(--orange); /* Altera a cor de fundo ao passar o mouse */
@@ -477,7 +568,36 @@
     margin-top: 60px;
     margin-bottom: 30px;
     text-align: center;
+  }.carrossel h1{
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--lightWhite);
+    text-align: center;
+}
+
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 350px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
+
+  .colunaCartao h2 {
+    font-family: "Poppins";
+    font-size: 26px;
+    color: var(--lightWhite);
+    margin-top: 60px;
   }
+
 
   .colunaCartao h2 {
     font-family: "Poppins";
@@ -521,11 +641,14 @@
   }
 }
 /*para tela ate 1024px*/
-@media screen and (max-width: 1024px) and (min-width: 720px) {
+@media screen and (max-width: 1024px) and (min-width: 721px) {
   #apresentacao {
     margin-left: 0;
     text-align: center;
-  }
+  }  .slider-wrapper .slide-button{
+    display: none!important;
+
+}
 
   .title h1 {
     font-family: "Montserrat";
@@ -670,6 +793,35 @@
     margin-bottom: 30px;
     text-align: center;
   }
+
+  .colunaCartao h2 {
+    font-family: "Poppins";
+    font-size: 26px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+  }
+  .carrossel h1{
+    font-size: 45px;
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--lightWhite);
+    text-align: center;
+}
+
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 350px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
+}
 
   .colunaCartao h2 {
     font-family: "Poppins";

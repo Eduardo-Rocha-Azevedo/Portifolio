@@ -124,7 +124,7 @@ section{
     font-size: 60px;
     color: var(--lightWhite);
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: left;
     margin-right: 80px;
     margin-left: 60px;
@@ -137,11 +137,15 @@ section{
 .servico-item article:hover{
     background: linear-gradient(to bottom, #ca3c08e7, #f9004d );
 }
+.servico-item article:hover{
+    border-radius: 10px;
+    padding: 10px;
+}
 
 .coluna {
     flex: 1;
-    margin-right: 50px;
-    width: 290px;
+    margin-right: 30px;
+    width: 300px;
     height: 310px;
     margin-top: 80px;
     padding: 0 15px;
@@ -175,18 +179,7 @@ section{
 }
 
 /* Ajustes para cada projeto */
-.colunaCartao {
-    flex: 0 0 auto; /* Define a largura mínima e máxima dos itens para que não quebrem a linha */
-    width: 326px; /* Largura de cada projeto */
-    height: 500px;
-    margin-right: 20px; /* Espaçamento entre os projetos */
-    border-radius: 10px;
-    background-color: var(--darkGray);
-    color: #fff;
-    padding: 20px;
-    transition: all 0.5s;
-    border: 0.1px solid #3535354b;
-}
+
 
 .colunaCartao:last-child {
     margin-right: 0; /* Removendo a margem direita do último projeto */
@@ -254,9 +247,7 @@ a{
     margin-bottom: 30px;
     text-align: center;
 }
-#contato img:hover{
-   
-}
+
 .form{
     display: flex;
     flex-direction: column;

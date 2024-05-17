@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Azevedo</title>
-
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" rel="stylesheet" href="assets/css/responsividade.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
     <link rel="stylesheet" href="assets/css/carrosel.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav>
@@ -23,14 +20,11 @@
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
                 <li class="nav-item"><a href="#projetos" class="nav-link">Projeto</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
-
-
             </ul>
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="menu"></button>
             </div>
         </nav>
-
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
@@ -38,12 +32,8 @@
                 <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
                 <li class="nav-item"><a href="#projetos" class="nav-link" data-menu>Projeto</a></li>
                 <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
-
             </ul>
         </div>
-
-
-
     </header>
     <div class="cor">
         <section id="home" class="title">
@@ -51,23 +41,18 @@
             <div id="apresentacao"><br>
                 <h1>Eduardo <br>Azevedo</h1><br>
                 <h2>Systems Developer</h2><br><br>
-
             </div>
-
-    </div>
-    </section>
+        </section>
     </div>
     <section id="sobre" class="flexivel cor2">
         <article class="sobre" data-anima="centro">
             <div><img src="assets/img/foto.png" alt="pc" id="foto"></div>
             <div class="texto-direita">
                 <h1>Sobre</h1>
-                <p>Estou cursando Análise e Desenvolvimento de Sistemas,<br>já tenho conhecimento de algumas linguagens,
-                    também cursei programação no Ensino Médio em 2021, onde apreendi a desenvolver web site com html,css e
-                    Js</p>
-                <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR. </p>
+                <p>Estou cursando Análise e Desenvolvimento de Sistemas,<br>já tenho conhecimento de algumas linguagens, também cursei programação no Ensino Médio em 2021, onde aprendi a desenvolver web site com HTML, CSS e JavaScript.</p>
+                <p>Meu foco é desenvolvimento de sistemas, atualmente resido em Curitiba-PR.</p>
                 <h2>Conhecimento Técnico</h2>
-                <p>Estas são a tecnologias que utilizo para desenvolver:</p><br>
+                <p>Estas são as tecnologias que utilizo para desenvolver:</p><br>
                 <img src="assets/img/java.png" alt="java 17">
                 <img src="assets/img/icons8-css-50.png" alt="css">
                 <img src="assets/img/js.png" alt="javaScript">
@@ -75,8 +60,6 @@
             </div>
         </article>
     </section>
-    
-    </div>
     <section class="cor servico" id="servicos">
         <div>
             <h1>Serviços</h1>
@@ -86,13 +69,12 @@
                 <article class="coluna" data-anima="centro">
                     <div class="icone"><img src="assets/img/icons8-stack-of-paper-60.png" alt="gerenciamento"></div>
                     <h2>Web Site Full-Stack</h2>
-                    <p>Desenvolvimento, análise de requisitos, conexão com banco de dados,design, responsividade.</p>
+                    <p>Desenvolvimento, análise de requisitos, conexão com banco de dados, design, responsividade.</p>
                 </article>
-    
                 <article class="coluna" data-anima="centro">
                     <div class="icone"><img src="assets/img/banco.png" alt="gerenciamento"></div>
                     <h2>Web Site Back-end</h2>
-                    <p>Conexão com banco de dados, projeto MVC, SpringBoot.</p>
+                    <p>Conexão com banco de dados, projeto MVC, Spring Boot.</p>
                 </article>
                 <article class="coluna" data-anima="centro">
                     <div class="icone"><img src="assets/img/transmitir.png" alt="gerenciamento"></div>
@@ -104,17 +86,16 @@
                     <h2>Manutenção</h2>
                     <p>Manutenção de web sites.</p>
                 </article>
-                
             </div>
         </div>       
     </section>
-
     <section class="carrossel cor2" id="projetos">
-        <div class="container">
+        <div class="">
             <h1>Projetos</h1>
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
                 <div class="image-list">
+                    <!-- Adicione os artigos do carrossel aqui -->
                     <article class="image-item">
                         <div class="cartao" id="cartao1">
                             <h2>Bloco de Notas</h2>
@@ -123,7 +104,6 @@
                             <button class="cartao_link"><a href="https://drive.google.com/file/d/1miWJTW9v0WZLqarn7N6qkDgG3uxHliGK/view">Repositório </a></button>
                         </div>
                     </article>
-                    <!-- Adicione mais artigos conforme necessário -->
                     <article class="image-item">
                         <div class="cartao" id="cartao2">
                             <h2>Ancient Ruins</h2>
@@ -133,46 +113,38 @@
                         </div>
                     </article>
                     <article class="image-item">
-    
                         <div class="cartao" id="cartao3">
                             <h2>Rh web</h2>
                             <p>Web site feito para o estudo do back-end usando Java e Spring Boot e MySQL. Sendo possível adicionar candidatos e funcionários.</p>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Rh-web-site">Acessar</a></button>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Rh-web-site">Repositório </a></button>
                         </div>
-        
                     </article>
                     <article class="image-item">
-        
                         <div class="cartao" id="cartao4">
                             <h2>Agência Viagem</h2>
                             <p>Web site feito para o estudo do Full-Stack usando Java e Spring Boot e MySQL. Sendo possível adicionar pacotes de viagens.</p>
                             <button class="cartao_link"><a href="https://eduardo-rocha-azevedo.github.io/Agencia-Site/">Acessar</a></button>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Agencia-Site">Repositório </a></button>
                         </div>
-        
                     </article>
                     <article class="image-item">
-        
-                        <div class="cartao" id="cartao4">
+                        <div class="cartao" id="cartao5">
                             <h2>API File Server</h2>
                             <p>A API de Armazenamento de Arquivos permite fazer upload, download e listar arquivos armazenados no servidor.</p>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Api-File-Server">Acessar</a></button>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Api-File-Server">Repositório </a></button>
                         </div>
-        
                     </article>
                     <article class="image-item">
-        
-                        <div class="cartao" id="cartao4">
+                        <div class="cartao" id="cartao6">
                             <h2>Save the Bunny</h2>
-                            <p>Jogo feito para android apartir do android 8.1</p>
+                            <p>Jogo feito para android a partir do android 8.1</p>
                             <button class="cartao_link"><a href="https://eduardo-azevedo.itch.io/save-the-banny">Acessar</a></button>
                             <button class="cartao_link"><a href="https://github.com/Eduardo-Rocha-Azevedo/Save-the-Bunny">Repositório </a></button>
                         </div>
-        
                     </article>
-        
+                    
                 </div>
                 <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
                 <div class="slider-scrollbar">
@@ -183,19 +155,14 @@
             </div>
         </div>
     </section>
-
     <section class="cor">
-
-        <form class="form" id="form" action="https://formsubmit.co/ajax/eduazevedo5414@gmail.com" method="POST"
-            data-form>
+        <form class="form" id="form" action="https://formsubmit.co/ajax/eduazevedo5414@gmail.com" method="POST" data-form>
             <div class="form-content">
                 <div id="contato">
                     <h1>Entre em contato</h1>
-                    <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png"
-                            alt="github"></a>
+                    <a href="https://github.com/Eduardo-Rocha-Azevedo"><img src="assets/img/github.png" alt="github"></a>
                     <a href=""><img src="assets/img/icons8-mensagem-com-quadrado-50.png" alt=""></a><p>email</p>
-                    <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img
-                            src="assets/img/icons8-linkedin-50.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/eduardo-rocha-azevedo-b221b7289/"><img src="assets/img/icons8-linkedin-50.png" alt=""></a>
                     <br><br>
                 </div>
                 <label for="username">
@@ -212,18 +179,13 @@
                 <p>Aqui vai a mensagem de erro</p>
             </div>
             <div class="form-content">
-                <h4>Digite uma menssagem</h4>
-                <textarea name="mensagem" cols="30" rows="10" placeholder="Digite aqui a menssagem" required></textarea>
+                <h4>Digite uma mensagem</h4>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Digite aqui a mensagem" required></textarea>
             </div>
-
             <button type="submit" data-button>Enviar</button>
-
-
         </form>
     </section>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/form.js"></script>
-
 </body>
-
 </html>

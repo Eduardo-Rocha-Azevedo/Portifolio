@@ -60,23 +60,7 @@
     display: none;
 }
 
-.slider-wrapper .image-item {
-    flex: 0 0 auto;
-    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
-    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
-    height: 500px;
-    border-radius: 8px;
-    border: #555555 1px solid;
-    background-color: #00000000; /* Cor de fundo de cada projeto */
-    padding: 20px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
-    position: relative;
-    color: var(--lightWhite);
-}
 
-.slider-wrapper .image-item:hover{
-    background: linear-gradient(to bottom, #ca3c08e7, #f9004d, #00000000);
-}
 .carrossel h1{
     font-size: 45px;
     font-family: 'Poppins';
@@ -86,10 +70,31 @@
     text-align: center;
 }
 
-.image-item h2{
-    margin-bottom: 15px;
-    margin-top: 10vh;
+  .slider-wrapper .image-item {
+    flex: 0 0 auto;
+    width: 290px; /*  calc(33% - 20px);  Garante que haja espaço suficiente para cada item lado a lado */
+    margin: 0 10px; /* Adiciona margens laterais para compensar as margens negativas do container */
+    height: 350px;
+    border-radius: 8px;
+    border: #555555 1px solid;
+    background-color: #00000000; /* Cor de fundo de cada projeto */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos itens */
+    position: relative;
+    color: var(--lightWhite);
 }
+
+  .colunaCartao h2 {
+    font-family: "Poppins";
+    font-size: 26px;
+    color: var(--lightWhite);
+    margin-top: 60px;
+  }
+
+.slider-wrapper .image-item:hover{
+    background: linear-gradient(to bottom, #ca3c08e7, #f9004d, #00000000);
+}
+
 .image-item p{
     font-size: 15px;
     margin-bottom: 15px;
